@@ -196,8 +196,7 @@ int boradPVP()
       playermark = 'O';
     }
 
-    cout << "Enter Option :" << player << " : \n";
-    cin >> bordchoice;
+    cout << "| " << "Enter Option :" << player << " : ";cin >> bordchoice;
     system("CLS");
 
     // Marking
@@ -226,7 +225,7 @@ int boradPVP()
     }
 
     // checking for wins
-    if (i == 4)
+    if (i >= 4)
     {
       if (borad[0] == borad[1] && borad[1] == borad[2])
       {
@@ -270,138 +269,7 @@ int boradPVP()
         break;
       }
     }
-    if (i == 5)
-    {
-      if (borad[0] == borad[1] && borad[1] == borad[2])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[3] == borad[4] && borad[4] == borad[5])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[6] == borad[7] && borad[7] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[3] && borad[3] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-
-      if (borad[1] == borad[4] && borad[4] == borad[7])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[5] && borad[5] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[4] && borad[4] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[4] && borad[4] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-    }
-    if (i == 6)
-    {
-      if (borad[0] == borad[1] && borad[1] == borad[2])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[3] == borad[4] && borad[4] == borad[5])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[6] == borad[7] && borad[7] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[3] && borad[3] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-
-      if (borad[1] == borad[4] && borad[4] == borad[7])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[5] && borad[5] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[4] && borad[4] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[4] && borad[4] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-    }
-    if (i == 7)
-    {
-      if (borad[0] == borad[1] && borad[1] == borad[2])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[3] == borad[4] && borad[4] == borad[5])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[6] == borad[7] && borad[7] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[3] && borad[3] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-
-      if (borad[1] == borad[4] && borad[4] == borad[7])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[5] && borad[5] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[4] && borad[4] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[4] && borad[4] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-    }
+    // 
 
     if (i == 8)
     {
@@ -500,8 +368,7 @@ void boradPVC()
       player = player1Name;
       playermark = 'X';
 
-      cout << "Enter Option :" << player << " : ";
-      cin >> bordchoice;
+      cout << "| " << "Enter Option :" << player << " : ";cin >> bordchoice;
     }
     else
     {
@@ -540,7 +407,7 @@ void boradPVC()
     }
 
     // checking for wins
-    if (i == 4)
+    if (i >= 4)
     {
       if (borad[0] == borad[1] && borad[1] == borad[2])
       {
@@ -584,138 +451,7 @@ void boradPVC()
         break;
       }
     }
-    if (i == 5)
-    {
-      if (borad[0] == borad[1] && borad[1] == borad[2])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[3] == borad[4] && borad[4] == borad[5])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[6] == borad[7] && borad[7] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[3] && borad[3] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-
-      if (borad[1] == borad[4] && borad[4] == borad[7])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[5] && borad[5] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[4] && borad[4] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[4] && borad[4] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-    }
-    if (i == 6)
-    {
-      if (borad[0] == borad[1] && borad[1] == borad[2])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[3] == borad[4] && borad[4] == borad[5])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[6] == borad[7] && borad[7] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[3] && borad[3] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-
-      if (borad[1] == borad[4] && borad[4] == borad[7])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[5] && borad[5] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[4] && borad[4] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[4] && borad[4] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-    }
-    if (i == 7)
-    {
-      if (borad[0] == borad[1] && borad[1] == borad[2])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[3] == borad[4] && borad[4] == borad[5])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[6] == borad[7] && borad[7] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[3] && borad[3] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-
-      if (borad[1] == borad[4] && borad[4] == borad[7])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[5] && borad[5] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[2] == borad[4] && borad[4] == borad[6])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-      if (borad[0] == borad[4] && borad[4] == borad[8])
-      {
-        cout << player << "  :  WINS";
-        break;
-      }
-    }
+    
 
     if (i == 8)
     {
