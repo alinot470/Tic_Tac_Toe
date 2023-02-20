@@ -214,7 +214,7 @@ int boradPVP()
     }
 
     // checking for wins
-    if (i >= 4)
+    if (i >= 4 && i <= 7)
     {
       if (borad[0] == borad[1] && borad[1] == borad[2])
       {
@@ -397,7 +397,7 @@ void boradPVC()
     }
 
     // checking for wins
-    if (i >= 4)
+    if (i >= 4 && i <= 7)
     {
       if (borad[0] == borad[1] && borad[1] == borad[2])
       {
