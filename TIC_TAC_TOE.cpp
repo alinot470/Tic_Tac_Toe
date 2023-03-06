@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <windows.h>
 #include <time.h>
+#include <fstream>
 
 using namespace std;
 int playMenuChoice;
@@ -237,7 +238,7 @@ int boradPVP()
 {
   
   char borad[9] = {'0', '1', '2', '3', '4', '5', '6', '7', '8'};
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < 9 ; i++)
   {
 
     cout << "\n ________________________________ \n";
@@ -412,7 +413,7 @@ void GameWinMessage()
   cout << "|________________________________|\n";
   cout << "|                                |\n";
   cout << "      " << player << "            \n";
-  cout << "|                 WINS           |\n";
+  cout << "|                 WIN            |\n";
   cout << "|                                |\n";
   cout << "|Press R key to Restart game     |\n";
   cout << "|Press Esc key to Game Menu      |\n";
@@ -420,6 +421,10 @@ void GameWinMessage()
   cout << "|";
   key = getch();
   system("CLS");
+  ofstream win;
+  win.open("match.txt", ios::app);
+  win <<"PVP  =  name " << player<< " states =  Win"<<endl;
+  win.close();
   if (key == 27)
   {
     MainMenu();
@@ -446,6 +451,11 @@ void GameDrawMessage()
   cout << "|";
   key = getch();
   system("CLS");
+  ofstream win;
+  win.open("match.txt", ios::app);
+  win << "PVP  =  name" << player1Name << "   "
+      << "name" << player2Name << " status =  Draw " << endl;
+  win.close();
   if (key == 27)
   {
     MainMenu();
@@ -465,7 +475,7 @@ void GameWinMessagePVC()
   cout << "|________________________________|\n";
   cout << "|                                |\n";
   cout << "      " << player << "            \n";
-  cout << "|                 WINS           |\n";
+  cout << "|                 WIN            |\n";
   cout << "|                                |\n";
   cout << "|Press R key to Restart game     |\n";
   cout << "|Press Esc key to Game Menu      |\n";
@@ -473,6 +483,10 @@ void GameWinMessagePVC()
   cout << "|";
   key = getch();
   system("CLS");
+  ofstream win;
+  win.open("match.txt", ios::app);
+  win << "PVC   =  name " << player << " states =  Win" << endl;
+  win.close();
   if (key == 27)
   {
     MainMenu();
@@ -497,6 +511,10 @@ void GameDrawMessagePVC()
   cout << "|";
   key = getch();
   system("CLS");
+  ofstream win;
+  win.open("match.txt", ios::app);
+  win <<"PVC    =  name"<< player1Name << "   " << "name"<<player2Name << " status =  Draw " << endl;
+  win.close();
   if (key == 27)
   {
     MainMenu();
